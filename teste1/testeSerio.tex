@@ -1,0 +1,130 @@
+\documentclass{article}
+
+%\usepackage[pages=all, color=black, position={current page.south}, placement=bottom, scale=1, opacity=1, vshift=5mm]{background}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{natbib}
+%\usepackage{biblatex}
+%\addbibresource{blib.bib}
+
+\title{Um simples teste de \LaTeXe}
+
+\author{Rotfuchs von Vulpes}
+
+\begin{document}
+    \maketitle
+    \begin{abstract}
+        Este resumo não te diz nada, logo vem um monte de nada a seguir e leia por conta e risco. Continua lendo? Interessante, então vai ter que ouvir: Cientistas deviam estar no poder, pronto falei. A seguir você verá testes de formulas, acentos, ç, ü e outros caracteres especiais, formulas do tipo $2+2=4$ tabelas, imagens, figuras e um curto texto de opinião, tudo em \LaTeX, e não vou usar Lorem Opision porque isso é adimitir falta de criatividade. Emtão, aproveite. LUA é bom.
+        
+        \noindent\textbf{palavras-chave:} artigo, testes, matemática, computação, desenho
+    \end{abstract}
+
+    \tableofcontents
+
+    \section{Introdução}
+    \subsection{Premielinares}
+
+    \section{Formulas}
+    \subsection{introdução}
+    \subsection{Lógica}
+    Lógica Matemática é uma sub-área da matemática que explora as aplicações da lógica formal para a matemática. Basicamente, tem ligações fortes com matemática, os fundamentos da matemática e ciência da computação teórica.\cite{logica}
+    \\Lógica é realmente muito Interessante, gosto bastante, mas ainda não sei calcular, mas acabei de aprender a fazer tautologias. Eis um exemplo de tautologia em lógica proposicional:
+    \[
+        ((p \lor q) \land (p \rightarrow r)) \lor (\lnot(p \lor q)) \lor (\lnot (p \rightarrow r)).
+    \]
+    Agora uma tautologia em lógica de primeira ordem:
+    \[
+        (((\exists x Rx) \land \lnot(\exists x Sx)) \rightarrow \forall x Tx) \leftrightarrow ((\exists x Rx) \rightarrow ((\lnot \exists x Sx) \rightarrow \forall x Tx)).
+    \]
+    \subsection{Conjuntos}
+    Teoria dos conjuntos ou de conjuntos é o ramo da matemática que estuda conjuntos, que são coleções de elementos. Embora qualquer tipo de elemento possa ser reunido em um conjunto, a teoria dos conjuntos é aplicada na maioria das vezes a elementos que são relevantes para a matemática. A linguagem da teoria dos conjuntos pode ser usada nas definições de quase todos os elementos matemáticos.\cite{conjuntos}
+    \\Conjuntos é Interessante, porem ele em si não é muito legal, mas quando munido de operações, isto é, um \textit{anel}, aí as coisas ficam interessantes.
+    \[
+        \mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \subset \cdots
+    \]
+    \subsection{Funções}
+    Uma função é uma relação de um conjunto $A$ com um conjunto $B$ . Usualmente, denotamos uma tal função por $f : A \rightarrow B$ ,  $y = f ( x )$, onde $f$ é o nome da função, $A$ é chamado de domínio, $B$ é chamado de contradomínio e $y = f (x)$ expressa a lei de correspondência (relação) dos elementos $x \in A$ com os elementos $y \in B$. Conforme suas características, as funções são agrupadas em várias categorias, entre as principais temos: função trigonométrica, função afim (ou função polinomial do 1° grau), função modular, função quadrática (ou função polinomial do 2° grau), função exponencial, função logarítmica, função polinomial, dentre inúmeras outras.\cite{funcoes}
+    \\Funções são estremamente uteis, principalmente em materias de calculo e fisica. Gosto muito de funções polinominais, eis um exemplo:
+    \[
+        f(x)=x(x-3)(x+2)
+    \]
+    Fica como tarefa pra casa achar as raizes.
+    \subsection{Álgebra}
+    Álgebra é o ramo da matemática que estuda a manipulação formal de equações, operações matemáticas, polinômios e estruturas algébricas.[1] A álgebra é um dos principais ramos da matemática pura, juntamente com a geometria, topologia, análise, e teoria dos números.\cite{algebra}
+    \\Esta é a minha área favorita da matemática, me considero um álgebrista! è realmente muito útil em problemas de matemática, computação e física. A minha parte favorita é isolar variáveis, aqui um sitema de passos:
+    \[
+        \begin{array}{rcl}
+            y&=&\frac{x}{(x-1)(y+2)}\\
+            y(x-1)(y+2)&=&x\\
+            (xy-y)(y+2)&=&x\\
+            y(xy-y)+2(xy-y)&=&x\\
+            (xy^2-y^2)+(2xy-2y)&=&x\\
+            xy^2+2xy-2y-y^2&=&x\\
+            -2y-y^2&=&x-2xy-xy^2\\
+            -2y-y^2&=&x(1-2y-y^2)\\
+            \frac{2y+y^2}{2y+y^2-1}&=&x
+        \end{array}
+    \]
+    \subsection{Geometria}
+    A geometria (em grego clássico: $ \gamma \epsilon \omega \mu \epsilon \tau \rho \iota \alpha $ ; geo- "terra", -metria "medida") é um ramo da matemática preocupado com questões de forma, tamanho e posição relativa de figuras e com as propriedades dos espaços. Um matemático que trabalha no campo da geometria é denominado de geômetra.\cite{geometria}
+    \\Outra área que amo muito, em particular trigonometria, e as provas costumam ser lindas, eis aqui a formula para a área de um triangulo equilátero de lado $l$:
+    \[
+        A=\frac{r^2\sqrt{3}}{4}
+    \]
+    \subsection{Probabilidade}
+    A teoria das probabilidades é o estudo matemático das probabilidades. Pierre Simon Laplace é considerado o fundador da teoria das probabilidades.
+    \\Os teoremas de base das probabilidades podem ser demonstrados a partir dos axiomas de probabilidade e da teoria de conjuntos.
+    \\Os teoremas seguintes supõem que o universo $\Omega$ é um conjunto finito, o que nem sempre é o caso, como por exemplo no caso do estudo de uma variável aleatória que segue uma distribuição normal.
+
+    \begin{enumerate}
+        \item A soma das probabilidades de todos os eventos elementares é igual a 1.
+        \item Para todos os eventos arbitrários A$_1$ e A$_2$, a probabilidade de os eventos se realizarem simultaneamente é dada pela soma das probabilidades de todos os eventos elementares incluídos tanto em A$_1$ como em A$_2$. Se a intersecção é vazia, então a probabilidade é igual a zero.
+        \item Para todos os eventos arbitrários A$_1$ e A$_2$, a probabilidade de que um ou outro evento se realize é dada pela soma das probabilidades de todos os eventos elementares incluídos em A$_1$ ou A$_2$.
+    \end{enumerate}
+    
+    As fórmulas seguintes exprimem matematicamente as propriedades acima:\cite{probabilidade}
+    \[
+        \sum_{\omega \in \Omega}P(\{\omega\})=P\left(\bigcup_{\omega \in \Omega} \{\omega\}\right)=1
+    \]
+    \[
+        P[A_1 \cap A_2] = \sum_{\omega \in A_1 \cap A_2} P(\{\omega\})
+    \]
+    \[
+        P[A_1 \cup A_2] = \sum_{\omega \in A_1 \cup A_2} P(\{\omega\})
+    \]
+    Eu não gosto muito de probabilidade, mas pretendo aprender, já que é extremamente útil. O maximo que sei é que dado evento $P$ com probabilidade $p$ de acontecer e outro evento $Q$ com probabilidade $q$ de acontecer é dado por:
+    \[
+        \omega = pq
+    \]
+    \subsection{Combinatória}
+    A combinatória é um ramo da matemática que estuda coleções finitas de elementos que satisfazem critérios específicos determinados e se preocupa, em particular, com a "contagem" de elementos nessas coleções (combinatória enumerativa), com decidir se certo objeto "ótimo" existe (combinatória extremal) e com estruturas "algébricas" que esses objetos possam ter (combinatória algébrica).
+    \\O assunto ganhou notoriedade após a publicação de textit{Análise Combinatória} por Percy Alexander MacMahon em 1915. Um dos destacados combinatorialistas foi Gian-Carlo Rota, que ajudou a formalizar o assunto a partir da década de 1960. E, o engenhoso Paul Erdős trabalhou principalmente em problemas extremais. O estudo de como contar os objetos é algumas vezes considerado separadamente como um campo da enumeração.\cite{combinatoria}
+    \\Análise combinatória é interessante, e simples, talvez seja a área que mais deixo de lado, atrás apenas de matemática financeira, que aliás não tem tópico neste artigo.
+    \\Suponhamos que você tem $n$ 
+    \subsection{Calculo diferencial}
+    \subsection{Calculo integral}
+    \subsection{Calculo vetorial}
+    \subsection{Geometria analitica}
+
+    \section{Computação}
+    \subsection{Opinião}
+    A programação começou na minha vida como uma obrigação, em um curso de TI, mas logo me apaixonei por lógica da programação, linguagens de programação, e linguagens de marcação.
+    \subsection{Minha experiência}
+    \subsection{Pseudo-algoritmos}
+
+    \section{Desenhos e figuras}
+    \subsection{Desenhos}
+    \subsection{Figuras em \TeX}
+
+    \section{Conclusão}
+
+    \medskip
+
+    \bibliographystyle{unsrt}
+    \bibliography{bib}
+    
+\end{document}
